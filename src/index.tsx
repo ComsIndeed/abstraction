@@ -1,9 +1,13 @@
 /* @refresh reload */
-import { render } from 'solid-js/web'
+import { render } from "solid-js/web";
+import Abstraction from "./lib/abstraction/abstraction";
 
-import './index.css'
-import App from './App'
+const abstraction = new Abstraction();
 
-const root = document.getElementById('root')
+import App from "./App";
 
-render(() => <App />, root!)
+const root = document.getElementById("root");
+
+render(() => <App />, root!);
+
+abstraction.start();
