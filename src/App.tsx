@@ -1,13 +1,10 @@
 import "./App.css";
 import Interface from "./components/interface.test";
-import test from "./lib/test";
 
-function App() {
-  test();
-
+function App(props: any) {
   return (
     <>
-      <Interface />
+      <Interface abstraction={props.abstraction} />
     </>
   );
 }

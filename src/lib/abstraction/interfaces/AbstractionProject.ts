@@ -1,14 +1,14 @@
 import {
-  CodeblockAbstractionElement,
+  BlockAbstractionElement,
   FolderAbstractionElement,
 } from "./AbstractionElements";
 
-export interface AbstractionProject {
-  head: HeadProperty;
+export interface AbstractionProjectInterface {
+  head: HeadProjectProperty;
   contents: ContentsProperty;
 }
 
-interface HeadProperty {
+export interface HeadProjectProperty {
   name: string;
   dependencies: string[];
   author?: string;
@@ -19,5 +19,5 @@ interface HeadProperty {
 
 export type ContentsProperty = (
   | FolderAbstractionElement
-  | CodeblockAbstractionElement
+  | BlockAbstractionElement
 )[];

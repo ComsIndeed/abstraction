@@ -1,6 +1,6 @@
-import { HeadPropertyCodeblockAbstractionElement } from "./AbstractionCodeblockDefinitions";
+import { HeadPropertyBlockAbstractionElement } from "./AbstractionBlockDefinitions";
 
 export interface Connection {
-  to: HeadPropertyCodeblockAbstractionElement["id"];
+  to: HeadPropertyBlockAbstractionElement["id"];
   relationship: "normal" | string;
 }

@@ -1,6 +1,6 @@
 import { Connection } from "./AbstractionElementDefinitions";
 
-export interface HeadPropertyCodeblockAbstractionElement {
+export interface HeadPropertyBlockAbstractionElement {
   name: string;
   id: string;
   blockType: "normal" | "looping" | "";

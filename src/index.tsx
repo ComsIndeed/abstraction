@@ -2,12 +2,12 @@
 import { render } from "solid-js/web";
 import Abstraction from "./lib/abstraction/abstraction";
 
-const abstraction = new Abstraction();
+const abstraction: AbstractionInterface = new Abstraction();
+abstraction.start();
 
 import App from "./App";
+import AbstractionInterface from "./lib/abstraction/interfaces";
 
 const root = document.getElementById("root");
 
-render(() => <App />, root!);
-
-abstraction.start();
+render(() => <App abstraction={abstraction} />, root!);
